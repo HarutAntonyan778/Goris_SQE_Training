@@ -1,0 +1,102 @@
+kturtle-script-v1.0
+@(reset)
+@(canvassize) 1000@(,)1000
+@(learn) ST {@(center)
+@(direction) 0
+$L = 0}
+@(fontsize) 24
+@(go) 520@(,) 0
+@(print) "Z"
+@(direction) 0
+@(direction) 0
+@(go) 980@(,) 790
+@(print) "Y"
+@(go) 20@(,) 790
+@(print) "X"
+@(center) 
+@(print) "0"
+@(penwidth) 3
+@(go) 500@(,)0
+@(turnright) 135
+@(forward) 10
+@(go) 500@(,)0
+@(turnright) 90
+@(forward) 10
+@(pencolor) 0@(,)0@(,)255
+@(go) 1000@(,) 789
+@(turnright) 15
+@(forward) 10
+@(go) 1000@(,) 789
+@(turnright) 105
+@(forward) 10
+@(center)
+@(go) 0@(,) 790
+@(pencolor) 150@(,)0@(,)0
+@(turnright) 15
+@(forward) 10
+@(go) 0@(,) 790
+@(turnright) 115
+@(forward) 10
+@(fontsize) 8
+ST
+$L=0
+@(repeat) 10 {
+@(pencolor) 0@(,)0@(,)0
+@(forward) 58
+@(pencolor) 150@(,)0@(,)0
+@(forward) 2
+@(pencolor) 0@(,)0@(,)0
+$L = $L+10
+@(print) $L }
+ST
+@(repeat) 10 {
+@(pencolor) 150@(,)0@(,)0
+@(turnright) 60
+@(forward) 58
+@(pencolor) 0@(,)0@(,)0
+@(forward) 2
+$L = $L-10
+@(turnleft) 60
+@(print) $L }
+ST
+@(repeat) 10 {
+@(pencolor) 0@(,)0@(,)255
+@(turnright) 120
+@(forward) 58
+@(pencolor) 0@(,)0@(,)0
+@(forward) 2
+@(direction) 0
+$L = $L+10
+@(print) $L }
+ST
+@(repeat) 10 {
+@(pencolor) 0@(,)0@(,)0
+@(turnright) 180
+@(forward) 58
+@(pencolor) 150@(,)0@(,)0
+@(forward) 2
+@(pencolor) 0@(,)0@(,)0
+@(direction) 0
+$L = $L-10
+@(print) $L }
+ST
+@(repeat) 10 {
+@(pencolor) 150@(,)0@(,)0
+@(turnright) 240
+@(forward) 58
+@(pencolor) 0@(,)0@(,)0
+@(forward) 2
+$L = $L+10
+@(direction) 0
+@(print) $L }
+ST
+@(repeat) 10 {
+@(pencolor) 0@(,)0@(,)255
+@(turnright) 300
+@(forward) 58
+@(pencolor) 0@(,)0@(,)0
+@(forward) 2
+@(direction) 0
+$L = $L-10
+@(print) $L }
+

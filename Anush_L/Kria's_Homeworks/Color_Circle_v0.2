@@ -1,0 +1,33 @@
+kturtle-script-v1.0
+@(reset)
+$SX=1000
+$SY=1000
+$Xo=$SX/2
+$Yo=$SY/2
+$R=400
+$X=0
+$Y=0
+$M=0
+@(learn) RB { $M=$X * $X- 2 * $X * $Xo+$Xo * $Xo+$Y*$Y-2 * $Y * $Yo+$Yo*$Yo }
+@(canvassize) $SX@(,)$SY
+@(turnleft) 180
+@(repeat) $SX {
+$X=$X+1
+$Y=0
+@(go) $X@(,)$Y
+@(repeat) $SY {
+$Y=$Y+1
+$M=0
+RB
+@(if) $R * $R == $M {
+@(penwidth) 2
+@(pencolor) 0@(,)255@(,)0 
+@(forward) 1}
+@(else) {
+@(go) $X@(,)$Y} 
+@(if) $M < $R*$R {
+@(penwidth) 2
+@(pencolor) 255@(,)255@(,)0  
+@(forward) 1}
+}
+}

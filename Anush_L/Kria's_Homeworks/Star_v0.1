@@ -1,0 +1,17 @@
+kturtle-script-v1.0
+@(reset) 
+$n = 150
+@(pencolor) 255@(,)0@(,)0 
+@(penwidth) 3
+@(turnright) 15
+@(forward) $n
+@(repeat) 4 {@(turnright) 144
+@(forward) $n}
+@(repeat) 16 {@(forward) -3
+@(pencolor) 255@(,)255@(,)0 
+@(penwidth) 3
+@(turnright) 144
+$n = $n-9
+@(forward) $n
+@(repeat) 4 {@(turnright) 144
+@(forward) $n-3}}
