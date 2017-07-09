@@ -1,0 +1,26 @@
+kturtle-script-v1.0
+@(reset)
+$SX=100
+$SY=100
+$Xo=40
+$Yo=40
+$Xl=60
+$Yl=60
+$X=0
+$Y=0
+@(cs) $SX@(,) $SY 
+@(turnright) 180
+@(penwidth) 2
+@(pencolor) 0@(,)0@(,)0
+@(repeat) $SX {
+$X=$X+1
+$Y=0
+@(go) $X@(,)$Y
+@(repeat) $SY {
+$Y=$Y+1
+@(if) $Yl > $Y @(and) $Y > $Yo @(and) $Xl > $X @(and) $X > $Xo {
+@(penwidth) 2
+@(pencolor) 0@(,)0@(,)0
+@(forward) 1
+}
+@(else) {@(go) $X@(,) $Y} }}
