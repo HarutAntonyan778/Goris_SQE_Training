@@ -1,0 +1,8 @@
+#!/bin/bash
+find
+touch file.txt
+echo "Files in a directory of file.txt" > file.txt
+for i in $(find);
+do
+echo $i >> file.txt
+done
