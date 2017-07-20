@@ -23,7 +23,7 @@ status, i = commands.getstatusoutput("google-chrome --version")
 for line in b.split("\n"):
         if "Distributor ID:" in line:
                 list = line.split("\t")
-                b1 =  list[1]
+                b1 = list[1]
         if "Description:" in line:
                 list = line.split("\t")
                 b2 = list[1]
