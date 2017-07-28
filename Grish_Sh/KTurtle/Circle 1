@@ -1,0 +1,32 @@
+kturtle-script-v1.0
+@(reset)
+$erkarutyun = 400
+$laynutyun = 400
+$rx=$erkarutyun/2
+$ry=$laynutyun/2
+$r=100
+$x=0
+$y=0
+$m=0
+@(learn) gg { $m=$x * $x -2 * $x*$rx+$rx*$rx+$y*$y-2*$y*$ry+$ry*$ry} 
+@(cs) $erkarutyun@(,) $laynutyun
+}
+@(tl) 180
+@(repeat) $erkarutyun {$x=$x+1
+$y=0
+@(go) $x@(,)$y
+@(repeat) $laynutyun {$y=$y+1
+$m=0
+gg
+@(if) $m>$r*$r {
+@(pw) 4
+@(pc) 0@(,)0@(,)255
+@(fw) 1}
+@(else) {@(go) $x@(,)$y}
+}
+}
+
+
+
+
+

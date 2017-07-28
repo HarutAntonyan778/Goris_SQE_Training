@@ -1,0 +1,18 @@
+kturtle-script-v1.0
+@(reset)
+$k = 200
+@(penwidth) 10 
+@(pencolor) 0@(,)255@(,)0
+@(turnright) 15
+@(forward) 200
+@(repeat) 4 {@(turnright) 144
+@(forward) 200}
+@(repeat) 6 {@(forward) -15
+@(turnleft) -312
+@(forward) -8
+@(turnleft) 312
+$k = $k-40
+@(repeat) 5{
+@(pencolor) 255@(,)0@(,)0
+@(turnright) 144
+@(forward) $k}}

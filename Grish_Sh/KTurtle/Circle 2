@@ -1,0 +1,32 @@
+kturtle-script-v1.0
+@(reset)
+@(go) 200@(,) 200
+@(pw) 2
+@(fw) 0.5
+@(tr) 90
+@(pu)
+@(fw) 8
+@(pd)
+@(repeat) 120 
+{
+@(pw) 1
+@(pc) 255@(,)0@(,)0
+@(forward) 0.15
+@(turnright) 3
+}
+@(pu)
+@(fw) 80
+@(pd)
+@(turnleft) 264
+@(wait) 1
+@(repeat) 33
+{
+@(pw) 2
+@(pc) 0@(,)160@(,)0
+@(forward) 17
+@(turnright) 11
+@(wait) 0.1
+}
+
+
+
